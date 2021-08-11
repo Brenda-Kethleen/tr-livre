@@ -1,0 +1,249 @@
+<!--indicando ao computador que será em html-->
+<html>
+
+<head>
+	<!--para a acentuação-->
+	<meta charset="utf-8">
+	
+	<!--titúlo da página(fica na aba)-->
+	<title>@Saúde Mental!!</title>
+	
+	<!--Ela deixa o nosso bootstrap responsivo-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+  	<!--Essa tag vai trazer alguns efeitos de css no bootstrap-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	
+	<!--Essa tag vai trazer efeitos visuais com ajax-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	
+  	<!--Essa tag também possui o ajax, só que possuí também Javascript-->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	
+  	<!--Aqui é Javascript-->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<!--CSS-->
+<style>
+	body{
+    /*cor do fundo da tela*/
+     background-color: #B0CBC2;
+ }
+
+ /*Deixando a imagem responsiva*/
+  .carousel-inner img {
+    width: 100%;
+    height: 75%;
+  }
+
+  /*Flexbox para organizar dentro dos containers*/
+.flexbox{
+	display: flex;
+
+	 /*Alinha os itens ao centro do container*/
+	 justify-content:center;
+
+	 /*Os itens ficam em linha*/
+	 flex-direction: row;
+}
+
+/*Flexbox para organizar dentro dos containers*/
+.flexbox2{
+	display: flex;
+
+	justify-content: flex-end;
+
+}
+
+</style>
+
+<!--Corpo gráfico do site-->
+<body>
+
+<!--Navbar-->
+	<div id="voltaraotopo">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  		<!--lista desordenada-->
+  		<ul class="navbar-nav">
+    	<li class="nav-item active">
+    	<!--Adicionar link-->
+      	<a class="nav-link" href="trabalho_livre.html">Página inicial</a>
+    	</li>
+    
+    	<li class="nav-item active">
+    	<!--Adicionar link-->
+      	<a class="nav-link" href="login.html">Login</a>
+    	</li>
+    
+    	<li class="nav-item active">
+    	<!--Adicionar link-->
+      	<a class="nav-link" href="documentacao.html">Documentação</a>
+    	</li>
+  		</ul>
+	</nav>
+	</div>
+
+	<!--Jumbotron-->
+	<!--<div> separar o código (regras de estilo)-->
+	<div class="container">
+  	<div class="jumbotron">
+    	<h1>@Saúde Mental!!</h1>      
+    	<p> </p>
+  	</div>     
+	</div>
+
+	<div class="container">
+	<nav class="navbar">
+	<ul>
+		<!--Adicionar link-->
+	<li><a href="#saudemeltal">Sáude Mental</a></li>
+	<li><a href="#video">Vídeo</a></li>
+	<li><a href="#comentarios">Cometários</a></li>
+	<li><a href="#contato">Contato</a></li>
+	</ul>
+	</nav>
+    </div>
+	
+  	<!--Definir a mudança de conteúdo-->
+  	<hr>
+ 
+	<div class="container">
+	<div id="saudemeltal">
+		<!--Centralizar-->
+  		<center><h2>SAÚDE MENTAL</h2></center>
+  		<p> A saúde mental é um termo usado para descrever um nível de qualidade de vida cognitiva ou emocional ou a ausência de uma doença mental. A saúde mental é um assunto muito importante e que tem que ser levado mais a serio, e em um momento muito difícil como o que estamos vivendo, a saúde mental de todos não está no seu melhor momento.</p>
+  	<center>
+  		<p><u>Pare;  Respire;  Pense;</u></p>
+		<p><u>Converse com outras pessoas;</u></p>
+		<p><u>Mantenha uma rotina saudavél;</u></p>
+		<p><u>Seja gentil com vocês e os outros;</u></p>
+		<p><u>Peça ajuda se precisar.</u></p>
+	</center>
+
+	<br>
+	<!--Definir a mudança de conteúdo-->
+  	<hr>
+
+  	<!--Centalizar-->
+  	<center>
+  		<div id="video">
+  		<h3>Assista o vídeo sobre Saúde Mental:</h3>
+  		<br>
+  		<!--Adiciona vídeo do youtube-->
+		<iframe  width="400" height="300" src="https://www.youtube.com/embed/chlYYrisVVg" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</center>
+
+  	</div>
+ 	</div>
+
+ 	<!--Definir a mudança de conteúdo-->
+  	<hr>
+
+ 	<br>
+ 	<br>
+	<!--Carossel-->
+	<!--<div> separar o código (regras de estilo)-->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  		<!--Indicadores de imagem-->
+  		<!--lista desordenada-->
+  		<ul class="carousel-indicators">
+    	<li data-target="#demo" data-slide-to="0" class="active"></li>
+    	<li data-target="#demo" data-slide-to="1"></li>
+    	<li data-target="#demo" data-slide-to="2"></li>
+  		</ul>
+  
+  	<!--Imagens-->
+  	<!--<div> separar o código (regras de estilo)-->
+  	<div class="carousel-inner">
+  	<div class="carousel-item active">
+    	<img src="respire.png" alt="Respire" width="1400" height="375">
+  	</div>
+
+  	<div class="carousel-item">
+     	<img src="cerebro.png" alt="Cérebro" width="1400" height="375">
+  	</div>
+
+  	<div class="carousel-item">
+     	<img src="porcentagem.png" alt="Saúde Mental 3" width="1400" height="375">
+  	</div>
+
+  	<!--Controle do carrousel(direito e esquerdo)-->
+  	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  	</a>
+  	<a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  	</a>
+  </div>
+
+<br>
+<br>
+	<!--Definir a mudança de conteúdo-->
+  	<hr>
+  	
+	<div class="container">
+  	<div id="comentarios">
+		<h2>Comentários:</h2>
+		<u>Ana:</u> <br> Otíma página, fala sobre um assunto muito importante.<br>
+		<u>Leonardo:</u> <br>Esse assunto tem que ser mais tratado.<br>
+ 	<div>
+ 	<br>
+
+ 	<!--Caixa de comentários-->
+ 	<div>
+ 	Nome:<br>
+ 	<!--Para perguta de formúlario-->
+   	<input type="text" name="nome"> <br />
+ 	Comentário:<br>
+   	<input type="text" name="comentarios" size="40"> <br>
+	<!--botão comentar-->
+    <!--Adicionar link-->
+    <a href="trabalho_livre.html" button type="submit" class="btn btn-primary" >Comentar</a></button>
+
+
+	</div>
+
+	</div>
+	</div>
+<br>
+<br>
+
+	<!--Definir a mudança de conteúdo-->
+  	<hr>
+
+  	<div class="container">
+  	<div id="contato">
+		<h2>Contato:</h2>
+		<p>Entre em contato com a gente e nos acompanhe com:</p>
+	<div class="flexbox">
+		<a class="nav-link" href="https://www.google.com/intl/pt-BR/gmail/about/"><u>Email:</u> <img src="email.png" width="50" height="50"/></a>
+		<a class="nav-link" href="https://www.whatsapp.com/"><u>Whatsapp:</u> <img src="whatsapp.png" width="50" height="50"/></a>
+		<a class="nav-link" href="https://www.instagram.com/"><u>Instagram:</u> <img src="instagram.png" width="50" height="50"/></a>
+		<a class="nav-link" href="https://www.facebook.com/?ref=tn_tnmn"><u>Facebook:</u> <img src="facebook.png" width="50" height="50"/> </a>
+
+	</div>
+	</div>
+	</div>
+
+	<br>
+
+	<div class="container">
+	<div class="flexbox2">
+	<!--Botão voltar ao topo-->
+	<a href="#voltaraotopo"><img src="seta.png" width="55" height="65"/></a>
+
+	</div>
+	</div>
+	
+  
+  <br>
+  <br>
+  <br>
+
+</body>
+
+</html>
+
